@@ -1,0 +1,486 @@
+
+> gym-management@0.0.1 start:dev
+> nest start --watch
+
+[2J[3J[H[[90m4:42:56 pm[0m] Starting compilation in watch mode...
+
+[[90m4:42:57 pm[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 13152  - [39m15/06/2026, 4:42:58 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 13152  - [39m15/06/2026, 4:42:58 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +8ms[39m
+[32m[Nest] 13152  - [39m15/06/2026, 4:42:58 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +3ms[39m
+[32m[Nest] 13152  - [39m15/06/2026, 4:42:58 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 13152  - [39m15/06/2026, 4:42:58 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +1ms[39m
+[2J[3J[H[[90m4:46:53 pm[0m] File change detected. Starting incremental compilation...
+
+[96msrc/main.ts[0m:[93m2[0m:[93m21[0m - [91merror[0m[90m TS2304: [0mCannot find name 'NestFactory'.
+
+[7m2[0m   const app = await NestFactory.create(AppModule);
+[7m [0m [91m                    ~~~~~~~~~~~[0m
+
+[96msrc/main.ts[0m:[93m2[0m:[93m40[0m - [91merror[0m[90m TS2552: [0mCannot find name 'AppModule'. Did you mean 'module'?
+
+[7m2[0m   const app = await NestFactory.create(AppModule);
+[7m [0m [91m                                       ~~~~~~~~~[0m
+
+  [96mnode_modules/@types/node/module.d.ts[0m:[93m824[0m:[93m13[0m
+    [7m824[0m         var module: NodeJS.Module;
+    [7m   [0m [96m            ~~~~~~[0m
+    'module' is declared here.
+
+[[90m4:46:54 pm[0m] Found 2 errors. Watching for file changes.
+
+[2J[3J[H[[90m4:47:45 pm[0m] File change detected. Starting incremental compilation...
+
+[96msrc/gym/gym.controller.ts[0m:[93m14[0m:[93m54[0m - [91merror[0m[90m TS1272: [0mA type referenced in a decorated signature must be imported with 'import type' or a namespace import when 'isolatedModules' and 'emitDecoratorMetadata' are enabled.
+
+[7m14[0m   getGymById(@Param('id', ParseIntPipe) id: number): Gym {
+[7m  [0m [91m                                                     ~~~[0m
+
+  [96msrc/gym/gym.controller.ts[0m:[93m2[0m:[93m24[0m
+    [7m2[0m import { CreateGymDto, Gym, GymService } from './gym.service';
+    [7m [0m [96m                       ~~~[0m
+    'Gym' was imported here.
+
+[96msrc/gym/gym.controller.ts[0m:[93m20[0m:[93m35[0m - [91merror[0m[90m TS1272: [0mA type referenced in a decorated signature must be imported with 'import type' or a namespace import when 'isolatedModules' and 'emitDecoratorMetadata' are enabled.
+
+[7m20[0m   createGym(@Body() createGymDto: CreateGymDto): Gym {
+[7m  [0m [91m                                  ~~~~~~~~~~~~[0m
+
+  [96msrc/gym/gym.controller.ts[0m:[93m2[0m:[93m10[0m
+    [7m2[0m import { CreateGymDto, Gym, GymService } from './gym.service';
+    [7m [0m [96m         ~~~~~~~~~~~~[0m
+    'CreateGymDto' was imported here.
+
+[96msrc/gym/gym.controller.ts[0m:[93m20[0m:[93m50[0m - [91merror[0m[90m TS1272: [0mA type referenced in a decorated signature must be imported with 'import type' or a namespace import when 'isolatedModules' and 'emitDecoratorMetadata' are enabled.
+
+[7m20[0m   createGym(@Body() createGymDto: CreateGymDto): Gym {
+[7m  [0m [91m                                                 ~~~[0m
+
+  [96msrc/gym/gym.controller.ts[0m:[93m2[0m:[93m24[0m
+    [7m2[0m import { CreateGymDto, Gym, GymService } from './gym.service';
+    [7m [0m [96m                       ~~~[0m
+    'Gym' was imported here.
+
+[[90m4:47:45 pm[0m] Found 3 errors. Watching for file changes.
+
+[2J[3J[H[[90m4:48:12 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m4:48:12 pm[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 17200  - [39m15/06/2026, 4:48:13 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 17200  - [39m15/06/2026, 4:48:13 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +10ms[39m
+[32m[Nest] 17200  - [39m15/06/2026, 4:48:13 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mGymModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 17200  - [39m15/06/2026, 4:48:13 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/}:[39m[38;5;3m +3ms[39m
+[32m[Nest] 17200  - [39m15/06/2026, 4:48:13 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 17200  - [39m15/06/2026, 4:48:13 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mGymController {/gyms}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 17200  - [39m15/06/2026, 4:48:13 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/gyms, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 17200  - [39m15/06/2026, 4:48:13 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/gyms/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 17200  - [39m15/06/2026, 4:48:13 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/gyms, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 17200  - [39m15/06/2026, 4:48:13 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +1ms[39m
+Route parameter id: 1
+Request body: { name: 'Peak Performance Gym', location: 'Pune', monthlyFee: 1800 }
+[2J[3J[H[[90m4:53:05 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m4:53:05 pm[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m4:54:10 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m4:54:10 pm[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m4:54:11 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m4:54:11 pm[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m4:54:19 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m4:54:19 pm[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m4:54:55 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m4:54:55 pm[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m4:55:19 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m4:55:20 pm[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 22160  - [39m15/06/2026, 4:55:21 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 22160  - [39m15/06/2026, 4:55:21 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +24ms[39m
+[32m[Nest] 22160  - [39m15/06/2026, 4:55:21 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mGymModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 22160  - [39m15/06/2026, 4:55:21 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api}:[39m[38;5;3m +235ms[39m
+[32m[Nest] 22160  - [39m15/06/2026, 4:55:21 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api, GET} route[39m[38;5;3m +4ms[39m
+[32m[Nest] 22160  - [39m15/06/2026, 4:55:21 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mGymController {/api/gyms}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 22160  - [39m15/06/2026, 4:55:21 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 22160  - [39m15/06/2026, 4:55:21 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 22160  - [39m15/06/2026, 4:55:21 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 22160  - [39m15/06/2026, 4:55:21 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +2ms[39m
+Gym Management API is running on http://localhost:3000/api
+[2J[3J[H[[90m4:55:30 pm[0m] File change detected. Starting incremental compilation...
+
+[96msrc/gym/gym.controller.ts[0m:[93m2[0m:[93m28[0m - [91merror[0m[90m TS2307: [0mCannot find module './gym.service' or its corresponding type declarations.
+
+[7m2[0m import { GymService } from './gym.service';
+[7m [0m [91m                           ~~~~~~~~~~~~~~~[0m
+
+[96msrc/gym/gym.controller.ts[0m:[93m3[0m:[93m40[0m - [91merror[0m[90m TS2307: [0mCannot find module './gym.service' or its corresponding type declarations.
+
+[7m3[0m import type { CreateGymDto, Gym } from './gym.service';
+[7m [0m [91m                                       ~~~~~~~~~~~~~~~[0m
+
+[96msrc/gym/gym.module.ts[0m:[93m3[0m:[93m28[0m - [91merror[0m[90m TS2307: [0mCannot find module './gym.service' or its corresponding type declarations.
+
+[7m3[0m import { GymService } from './gym.service';
+[7m [0m [91m                           ~~~~~~~~~~~~~~~[0m
+
+[[90m4:55:31 pm[0m] Found 3 errors. Watching for file changes.
+
+[2J[3J[H[[90m4:55:50 pm[0m] File change detected. Starting incremental compilation...
+
+[96msrc/gym/gym.module.ts[0m:[93m2[0m:[93m31[0m - [91merror[0m[90m TS2307: [0mCannot find module './gym.controller' or its corresponding type declarations.
+
+[7m2[0m import { GymController } from './gym.controller';
+[7m [0m [91m                              ~~~~~~~~~~~~~~~~~~[0m
+
+[[90m4:55:50 pm[0m] Found 1 error. Watching for file changes.
+
+[2J[3J[H[[90m4:56:27 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m4:56:28 pm[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 28940  - [39m15/06/2026, 4:56:28 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 28940  - [39m15/06/2026, 4:56:28 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +10ms[39m
+[32m[Nest] 28940  - [39m15/06/2026, 4:56:28 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mGymModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 28940  - [39m15/06/2026, 4:56:28 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api}:[39m[38;5;3m +19ms[39m
+[32m[Nest] 28940  - [39m15/06/2026, 4:56:28 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api, GET} route[39m[38;5;3m +4ms[39m
+[32m[Nest] 28940  - [39m15/06/2026, 4:56:28 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mGymController {/api/gyms}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 28940  - [39m15/06/2026, 4:56:28 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 28940  - [39m15/06/2026, 4:56:28 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 28940  - [39m15/06/2026, 4:56:28 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 28940  - [39m15/06/2026, 4:56:28 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 28940  - [39m15/06/2026, 4:56:28 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 28940  - [39m15/06/2026, 4:56:28 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +1ms[39m
+[2J[3J[H[[90m4:56:53 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m4:56:53 pm[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 23516  - [39m15/06/2026, 4:56:54 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 23516  - [39m15/06/2026, 4:56:54 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +14ms[39m
+[32m[Nest] 23516  - [39m15/06/2026, 4:56:54 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mGymModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 23516  - [39m15/06/2026, 4:56:54 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api}:[39m[38;5;3m +25ms[39m
+[32m[Nest] 23516  - [39m15/06/2026, 4:56:54 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api, GET} route[39m[38;5;3m +5ms[39m
+[32m[Nest] 23516  - [39m15/06/2026, 4:56:54 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mGymController {/api/gyms}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 23516  - [39m15/06/2026, 4:56:54 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 23516  - [39m15/06/2026, 4:56:54 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 23516  - [39m15/06/2026, 4:56:54 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 23516  - [39m15/06/2026, 4:56:54 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 23516  - [39m15/06/2026, 4:56:54 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 23516  - [39m15/06/2026, 4:56:54 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +3ms[39m
+Gym Management API is running on http://localhost:3000/api
+[2J[3J[H[[90m4:57:07 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m4:57:07 pm[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 26740  - [39m15/06/2026, 4:57:08 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 26740  - [39m15/06/2026, 4:57:08 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +9ms[39m
+[32m[Nest] 26740  - [39m15/06/2026, 4:57:08 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mGymModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 26740  - [39m15/06/2026, 4:57:08 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api}:[39m[38;5;3m +16ms[39m
+[32m[Nest] 26740  - [39m15/06/2026, 4:57:08 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 26740  - [39m15/06/2026, 4:57:08 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mGymController {/api/gyms}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 26740  - [39m15/06/2026, 4:57:08 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 26740  - [39m15/06/2026, 4:57:08 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 26740  - [39m15/06/2026, 4:57:08 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 26740  - [39m15/06/2026, 4:57:08 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 26740  - [39m15/06/2026, 4:57:08 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 26740  - [39m15/06/2026, 4:57:08 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +1ms[39m
+[2J[3J[H[[90m4:58:09 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m4:58:10 pm[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 9840  - [39m15/06/2026, 4:58:10 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 9840  - [39m15/06/2026, 4:58:10 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +8ms[39m
+[32m[Nest] 9840  - [39m15/06/2026, 4:58:10 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mGymModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 9840  - [39m15/06/2026, 4:58:10 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api}:[39m[38;5;3m +21ms[39m
+[32m[Nest] 9840  - [39m15/06/2026, 4:58:10 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 9840  - [39m15/06/2026, 4:58:10 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mGymController {/api/gyms}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 9840  - [39m15/06/2026, 4:58:10 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 9840  - [39m15/06/2026, 4:58:10 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 9840  - [39m15/06/2026, 4:58:10 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 9840  - [39m15/06/2026, 4:58:10 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 9840  - [39m15/06/2026, 4:58:10 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 9840  - [39m15/06/2026, 4:58:10 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +1ms[39m
+Gym Management API is running on http://localhost:3000/api
+[2J[3J[H[[90m4:58:36 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m4:58:36 pm[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 23316  - [39m15/06/2026, 4:58:37 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 23316  - [39m15/06/2026, 4:58:37 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +9ms[39m
+[32m[Nest] 23316  - [39m15/06/2026, 4:58:37 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mGymModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 23316  - [39m15/06/2026, 4:58:37 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api}:[39m[38;5;3m +14ms[39m
+[32m[Nest] 23316  - [39m15/06/2026, 4:58:37 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api, GET} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 23316  - [39m15/06/2026, 4:58:37 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mGymController {/api/gyms}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 23316  - [39m15/06/2026, 4:58:37 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 23316  - [39m15/06/2026, 4:58:37 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 23316  - [39m15/06/2026, 4:58:37 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 23316  - [39m15/06/2026, 4:58:37 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 23316  - [39m15/06/2026, 4:58:37 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 23316  - [39m15/06/2026, 4:58:37 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +1ms[39m
+[2J[3J[H[[90m5:02:16 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m5:02:17 pm[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 4744  - [39m15/06/2026, 5:02:18 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 4744  - [39m15/06/2026, 5:02:18 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +14ms[39m
+[32m[Nest] 4744  - [39m15/06/2026, 5:02:18 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mGymModule dependencies initialized[39m[38;5;3m +21ms[39m
+[32m[Nest] 4744  - [39m15/06/2026, 5:02:18 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api}:[39m[38;5;3m +32ms[39m
+[32m[Nest] 4744  - [39m15/06/2026, 5:02:18 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api, GET} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 4744  - [39m15/06/2026, 5:02:18 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mGymController {/api/gyms}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 4744  - [39m15/06/2026, 5:02:18 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 4744  - [39m15/06/2026, 5:02:18 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 4744  - [39m15/06/2026, 5:02:18 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 4744  - [39m15/06/2026, 5:02:18 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 4744  - [39m15/06/2026, 5:02:18 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 4744  - [39m15/06/2026, 5:02:18 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +3ms[39m
+Gym Management API is running on http://localhost:3000/api
+[2J[3J[H[[90m5:06:58 pm[0m] File change detected. Starting incremental compilation...
+
+[2J[3J[H[[90m5:33:57 pm[0m] File change detected. Starting incremental compilation...
+
+[2J[3J[H[[90m5:34:04 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m5:34:05 pm[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 24908  - [39m15/06/2026, 5:34:06 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 24908  - [39m15/06/2026, 5:34:06 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +10ms[39m
+[32m[Nest] 24908  - [39m15/06/2026, 5:34:06 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mGymModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 24908  - [39m15/06/2026, 5:34:06 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api}:[39m[38;5;3m +36ms[39m
+[32m[Nest] 24908  - [39m15/06/2026, 5:34:06 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 24908  - [39m15/06/2026, 5:34:06 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mGymController {/api/gyms}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 24908  - [39m15/06/2026, 5:34:06 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 24908  - [39m15/06/2026, 5:34:06 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 24908  - [39m15/06/2026, 5:34:06 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 24908  - [39m15/06/2026, 5:34:06 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 24908  - [39m15/06/2026, 5:34:06 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 24908  - [39m15/06/2026, 5:34:06 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +1ms[39m
+Gym Management API is running on http://localhost:3000/api
+[2J[3J[H[[90m5:34:23 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m5:34:23 pm[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 8368  - [39m15/06/2026, 5:34:24 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 8368  - [39m15/06/2026, 5:34:24 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +9ms[39m
+[32m[Nest] 8368  - [39m15/06/2026, 5:34:24 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mGymModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 8368  - [39m15/06/2026, 5:34:24 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api}:[39m[38;5;3m +18ms[39m
+[32m[Nest] 8368  - [39m15/06/2026, 5:34:24 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api, GET} route[39m[38;5;3m +4ms[39m
+[32m[Nest] 8368  - [39m15/06/2026, 5:34:24 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mGymController {/api/gyms}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 8368  - [39m15/06/2026, 5:34:24 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 8368  - [39m15/06/2026, 5:34:24 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 8368  - [39m15/06/2026, 5:34:24 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 8368  - [39m15/06/2026, 5:34:24 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 8368  - [39m15/06/2026, 5:34:24 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 8368  - [39m15/06/2026, 5:34:24 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +1ms[39m
+Gym Management API is running on http://localhost:3000/api
+[2J[3J[H[[90m5:34:49 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m5:34:49 pm[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 28420  - [39m15/06/2026, 5:34:50 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 28420  - [39m15/06/2026, 5:34:50 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +18ms[39m
+[32m[Nest] 28420  - [39m15/06/2026, 5:34:50 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mGymModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 28420  - [39m15/06/2026, 5:34:50 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api}:[39m[38;5;3m +26ms[39m
+[32m[Nest] 28420  - [39m15/06/2026, 5:34:50 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api, GET} route[39m[38;5;3m +4ms[39m
+[32m[Nest] 28420  - [39m15/06/2026, 5:34:50 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mGymController {/api/gyms}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 28420  - [39m15/06/2026, 5:34:50 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 28420  - [39m15/06/2026, 5:34:50 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 28420  - [39m15/06/2026, 5:34:50 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 28420  - [39m15/06/2026, 5:34:50 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 28420  - [39m15/06/2026, 5:34:50 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 28420  - [39m15/06/2026, 5:34:50 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +4ms[39m
+Gym Management API is running on http://localhost:3000/api
+[2J[3J[H[[90m5:34:50 pm[0m] File change detected. Starting incremental compilation...
+
+[2J[3J[H[[90m5:38:45 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m5:38:46 pm[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m5:38:46 pm[0m] File change detected. Starting incremental compilation...
+
+[32m[Nest] 18152  - [39m15/06/2026, 5:38:47 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 18152  - [39m15/06/2026, 5:38:47 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +13ms[39m
+[32m[Nest] 18152  - [39m15/06/2026, 5:38:47 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mGymModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 18152  - [39m15/06/2026, 5:38:47 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api}:[39m[38;5;3m +17ms[39m
+[32m[Nest] 18152  - [39m15/06/2026, 5:38:47 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api, GET} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 18152  - [39m15/06/2026, 5:38:47 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mGymController {/api/gyms}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 18152  - [39m15/06/2026, 5:38:47 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 18152  - [39m15/06/2026, 5:38:47 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 18152  - [39m15/06/2026, 5:38:47 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 18152  - [39m15/06/2026, 5:38:47 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 18152  - [39m15/06/2026, 5:38:47 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 18152  - [39m15/06/2026, 5:38:47 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +2ms[39m
+Gym Management API is running on http://localhost:3000/api
+[[90m5:38:47 pm[0m] Found 0 errors. Watching for file changes.
+
+[2J[3J[H[[90m5:38:47 pm[0m] File change detected. Starting incremental compilation...
+
+[32m[Nest] 25224  - [39m15/06/2026, 5:38:47 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 25224  - [39m15/06/2026, 5:38:47 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +8ms[39m
+[32m[Nest] 25224  - [39m15/06/2026, 5:38:47 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mGymModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 25224  - [39m15/06/2026, 5:38:47 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api}:[39m[38;5;3m +19ms[39m
+[32m[Nest] 25224  - [39m15/06/2026, 5:38:47 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api, GET} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 25224  - [39m15/06/2026, 5:38:47 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mGymController {/api/gyms}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 25224  - [39m15/06/2026, 5:38:47 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 25224  - [39m15/06/2026, 5:38:47 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 25224  - [39m15/06/2026, 5:38:47 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 25224  - [39m15/06/2026, 5:38:47 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 25224  - [39m15/06/2026, 5:38:47 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 25224  - [39m15/06/2026, 5:38:47 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +2ms[39m
+Gym Management API is running on http://localhost:3000/api
+[[90m5:38:48 pm[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 29268  - [39m15/06/2026, 5:38:48 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 29268  - [39m15/06/2026, 5:38:48 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +10ms[39m
+[32m[Nest] 29268  - [39m15/06/2026, 5:38:48 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mGymModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 29268  - [39m15/06/2026, 5:38:48 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api}:[39m[38;5;3m +16ms[39m
+[32m[Nest] 29268  - [39m15/06/2026, 5:38:48 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 29268  - [39m15/06/2026, 5:38:48 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mGymController {/api/gyms}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 29268  - [39m15/06/2026, 5:38:48 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 29268  - [39m15/06/2026, 5:38:48 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 29268  - [39m15/06/2026, 5:38:48 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 29268  - [39m15/06/2026, 5:38:48 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 29268  - [39m15/06/2026, 5:38:48 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 29268  - [39m15/06/2026, 5:38:48 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +2ms[39m
+Gym Management API is running on http://localhost:3000/api
+[2J[3J[H[[90m5:39:07 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m5:39:07 pm[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 27036  - [39m15/06/2026, 5:39:08 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 27036  - [39m15/06/2026, 5:39:08 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +9ms[39m
+[32m[Nest] 27036  - [39m15/06/2026, 5:39:08 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mGymModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 27036  - [39m15/06/2026, 5:39:08 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api}:[39m[38;5;3m +18ms[39m
+[32m[Nest] 27036  - [39m15/06/2026, 5:39:08 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api, GET} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 27036  - [39m15/06/2026, 5:39:08 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mGymController {/api/gyms}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 27036  - [39m15/06/2026, 5:39:08 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms, GET} route[39m[38;5;3m +1ms[39m
+[2J[3J[H[[90m5:39:08 pm[0m] File change detected. Starting incremental compilation...
+
+[32m[Nest] 27036  - [39m15/06/2026, 5:39:08 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 27036  - [39m15/06/2026, 5:39:08 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 27036  - [39m15/06/2026, 5:39:08 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 27036  - [39m15/06/2026, 5:39:08 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 27036  - [39m15/06/2026, 5:39:08 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +2ms[39m
+Gym Management API is running on http://localhost:3000/api
+[[90m5:39:08 pm[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 13608  - [39m15/06/2026, 5:39:08 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 13608  - [39m15/06/2026, 5:39:08 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +8ms[39m
+[32m[Nest] 13608  - [39m15/06/2026, 5:39:08 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mGymModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 13608  - [39m15/06/2026, 5:39:08 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api}:[39m[38;5;3m +15ms[39m
+[32m[Nest] 13608  - [39m15/06/2026, 5:39:08 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api, GET} route[39m[38;5;3m +4ms[39m
+[32m[Nest] 13608  - [39m15/06/2026, 5:39:08 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mGymController {/api/gyms}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 13608  - [39m15/06/2026, 5:39:08 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 13608  - [39m15/06/2026, 5:39:08 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 13608  - [39m15/06/2026, 5:39:08 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13608  - [39m15/06/2026, 5:39:08 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 13608  - [39m15/06/2026, 5:39:08 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 13608  - [39m15/06/2026, 5:39:08 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +1ms[39m
+Gym Management API is running on http://localhost:3000/api
+[2J[3J[H[[90m5:39:10 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m5:39:11 pm[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 19380  - [39m15/06/2026, 5:39:11 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 19380  - [39m15/06/2026, 5:39:11 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +9ms[39m
+[32m[Nest] 19380  - [39m15/06/2026, 5:39:11 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mGymModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 19380  - [39m15/06/2026, 5:39:11 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api}:[39m[38;5;3m +16ms[39m
+[32m[Nest] 19380  - [39m15/06/2026, 5:39:11 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 19380  - [39m15/06/2026, 5:39:11 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mGymController {/api/gyms}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 19380  - [39m15/06/2026, 5:39:11 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 19380  - [39m15/06/2026, 5:39:11 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 19380  - [39m15/06/2026, 5:39:11 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 19380  - [39m15/06/2026, 5:39:11 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 19380  - [39m15/06/2026, 5:39:11 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, DELETE} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 19380  - [39m15/06/2026, 5:39:11 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +1ms[39m
+Gym Management API is running on http://localhost:3000/api
+[2J[3J[H[[90m5:45:36 pm[0m] File change detected. Starting incremental compilation...
+
+[91merror[0m[90m TS5103: [0mInvalid value for '--ignoreDeprecations'.
+
+[[90m5:45:36 pm[0m] Found 1 error. Watching for file changes.
+
+[2J[3J[H[[90m5:45:48 pm[0m] File change detected. Starting incremental compilation...
+
+[91merror[0m[90m TS5103: [0mInvalid value for '--ignoreDeprecations'.
+
+[[90m5:45:48 pm[0m] Found 1 error. Watching for file changes.
+
+[2J[3J[H[[90m5:51:11 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m5:51:12 pm[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 1536  - [39m15/06/2026, 5:51:12 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 1536  - [39m15/06/2026, 5:51:12 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +10ms[39m
+[32m[Nest] 1536  - [39m15/06/2026, 5:51:12 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mGymModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 1536  - [39m15/06/2026, 5:51:12 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api}:[39m[38;5;3m +17ms[39m
+[32m[Nest] 1536  - [39m15/06/2026, 5:51:12 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 1536  - [39m15/06/2026, 5:51:12 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mGymController {/api/gyms}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 1536  - [39m15/06/2026, 5:51:12 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1536  - [39m15/06/2026, 5:51:12 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 1536  - [39m15/06/2026, 5:51:12 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1536  - [39m15/06/2026, 5:51:12 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 1536  - [39m15/06/2026, 5:51:12 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 1536  - [39m15/06/2026, 5:51:12 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +2ms[39m
+Gym Management API is running on http://localhost:3000/api
+[2J[3J[H[[90m5:52:03 pm[0m] File change detected. Starting incremental compilation...
+
+[2J[3J[H[[90m5:52:36 pm[0m] File change detected. Starting incremental compilation...
+
+[2J[3J[H[[90m5:55:34 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m5:55:34 pm[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 28676  - [39m15/06/2026, 5:55:35 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 28676  - [39m15/06/2026, 5:55:35 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +10ms[39m
+[32m[Nest] 28676  - [39m15/06/2026, 5:55:35 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mGymModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 28676  - [39m15/06/2026, 5:55:35 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api}:[39m[38;5;3m +15ms[39m
+[32m[Nest] 28676  - [39m15/06/2026, 5:55:35 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 28676  - [39m15/06/2026, 5:55:35 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mGymController {/api/gyms}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 28676  - [39m15/06/2026, 5:55:35 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 28676  - [39m15/06/2026, 5:55:35 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 28676  - [39m15/06/2026, 5:55:35 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms, POST} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 28676  - [39m15/06/2026, 5:55:35 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 28676  - [39m15/06/2026, 5:55:35 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 28676  - [39m15/06/2026, 5:55:35 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +1ms[39m
+[2J[3J[H[[90m5:55:35 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m5:55:35 pm[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 4632  - [39m15/06/2026, 5:55:36 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 4632  - [39m15/06/2026, 5:55:36 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +9ms[39m
+[32m[Nest] 4632  - [39m15/06/2026, 5:55:36 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mGymModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 4632  - [39m15/06/2026, 5:55:36 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api}:[39m[38;5;3m +17ms[39m
+[32m[Nest] 4632  - [39m15/06/2026, 5:55:36 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api, GET} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 4632  - [39m15/06/2026, 5:55:36 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mGymController {/api/gyms}:[39m[38;5;3m +0ms[39m
+[32m[Nest] 4632  - [39m15/06/2026, 5:55:36 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms, GET} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 4632  - [39m15/06/2026, 5:55:36 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, GET} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 4632  - [39m15/06/2026, 5:55:36 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 4632  - [39m15/06/2026, 5:55:36 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, PATCH} route[39m[38;5;3m +0ms[39m
+[32m[Nest] 4632  - [39m15/06/2026, 5:55:36 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 4632  - [39m15/06/2026, 5:55:36 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +1ms[39m
+Gym Management API is running on http://localhost:3000/api
+[2J[3J[H[[90m5:57:22 pm[0m] File change detected. Starting incremental compilation...
+
+[[90m5:57:23 pm[0m] Found 0 errors. Watching for file changes.
+
+[32m[Nest] 26496  - [39m15/06/2026, 5:57:24 pm [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 26496  - [39m15/06/2026, 5:57:24 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +14ms[39m
+[32m[Nest] 26496  - [39m15/06/2026, 5:57:24 pm [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mGymModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 26496  - [39m15/06/2026, 5:57:24 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mAppController {/api}:[39m[38;5;3m +31ms[39m
+[32m[Nest] 26496  - [39m15/06/2026, 5:57:24 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api, GET} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 26496  - [39m15/06/2026, 5:57:24 pm [32m    LOG[39m [38;5;3m[RoutesResolver] [39m[32mGymController {/api/gyms}:[39m[38;5;3m +1ms[39m
+[32m[Nest] 26496  - [39m15/06/2026, 5:57:24 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms, GET} route[39m[38;5;3m +2ms[39m
+[32m[Nest] 26496  - [39m15/06/2026, 5:57:24 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, GET} route[39m[38;5;3m +3ms[39m
+[32m[Nest] 26496  - [39m15/06/2026, 5:57:24 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms, POST} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 26496  - [39m15/06/2026, 5:57:24 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, PATCH} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 26496  - [39m15/06/2026, 5:57:24 pm [32m    LOG[39m [38;5;3m[RouterExplorer] [39m[32mMapped {/api/gyms/:id, DELETE} route[39m[38;5;3m +1ms[39m
+[32m[Nest] 26496  - [39m15/06/2026, 5:57:24 pm [32m    LOG[39m [38;5;3m[NestApplication] [39m[32mNest application successfully started[39m[38;5;3m +3ms[39m
+Gym Management API is running on http://localhost:3000/api
