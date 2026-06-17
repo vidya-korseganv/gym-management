@@ -1,23 +1,24 @@
 import {
   IsBoolean,
+  IsNotEmpty,
   IsNumber,
   IsOptional,
   IsString,
-  Min,
-} from 'class-validator';
+} from "class-validator";
 
 export class CreateGymDto {
   @IsString()
-  name: string;
+  @IsNotEmpty()
+  name!: string;
 
   @IsString()
-  location: string;
+  @IsNotEmpty()
+  location!: string;
 
   @IsNumber()
-  @Min(1)
-  monthlyFee: number;
+  monthlyFee!: number;
 
-  @IsOptional()
   @IsBoolean()
+  @IsOptional()
   isOpen?: boolean;
 }

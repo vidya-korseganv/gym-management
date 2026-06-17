@@ -1,17 +1,34 @@
-import { ValidationPipe } from '@nestjs/common';
-import { NestFactory } from '@nestjs/core';
-import { AppModule } from './app.module';
+import {
+  BadRequestException,
+  ValidationPipe,
+  type ValidationError,
+} from "@nestjs/common";
+import { NestFactory } from "@nestjs/core";
+import { AppModule } from "./app.module";
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
-  app.setGlobalPrefix('api');
+  app.setGlobalPrefix("api");
 
   app.useGlobalPipes(
     new ValidationPipe({
       whitelist: true,
       forbidNonWhitelisted: true,
       transform: true,
+      exceptionFactory: (errors: ValidationError[]) => {
+        const validationErrors = errors.map((error) => ({
+          field: error.property,
+          messages: Object.values(error.constraints ?? {}),
+        }));
+
+        return new BadRequestException({
+          statusCode: 400,
+          error: "Bad Request",
+          message: "Validation failed",
+          validationErrors,
+        });
+      },
     }),
   );
 

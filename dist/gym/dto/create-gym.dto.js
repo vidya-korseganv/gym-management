@@ -20,20 +20,21 @@ class CreateGymDto {
 exports.CreateGymDto = CreateGymDto;
 __decorate([
     (0, class_validator_1.IsString)(),
+    (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", String)
 ], CreateGymDto.prototype, "name", void 0);
 __decorate([
     (0, class_validator_1.IsString)(),
+    (0, class_validator_1.IsNotEmpty)(),
     __metadata("design:type", String)
 ], CreateGymDto.prototype, "location", void 0);
 __decorate([
     (0, class_validator_1.IsNumber)(),
-    (0, class_validator_1.Min)(1),
     __metadata("design:type", Number)
 ], CreateGymDto.prototype, "monthlyFee", void 0);
 __decorate([
-    (0, class_validator_1.IsOptional)(),
     (0, class_validator_1.IsBoolean)(),
+    (0, class_validator_1.IsOptional)(),
     __metadata("design:type", Boolean)
 ], CreateGymDto.prototype, "isOpen", void 0);
 //# sourceMappingURL=create-gym.dto.js.map

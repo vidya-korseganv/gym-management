@@ -27,20 +27,20 @@ let GymController = class GymController {
         return this.gymService.findAll();
     }
     getGymById(id) {
-        console.log('Route parameter id:', id);
+        console.log("Route parameter id:", id);
         return this.gymService.findOne(id);
     }
     createGym(createGymDto) {
-        console.log('Request body:', createGymDto);
+        console.log("Request body:", createGymDto);
         return this.gymService.create(createGymDto);
     }
     updateGym(id, updateGymDto) {
-        console.log('Update gym id:', id);
-        console.log('Update body:', updateGymDto);
+        console.log("Update gym id:", id);
+        console.log("Update body:", updateGymDto);
         return this.gymService.update(id, updateGymDto);
     }
     deleteGym(id) {
-        console.log('Delete gym id:', id);
+        console.log("Delete gym id:", id);
         return this.gymService.remove(id);
     }
 };
@@ -52,8 +52,8 @@ __decorate([
     __metadata("design:returntype", Array)
 ], GymController.prototype, "getAllGyms", null);
 __decorate([
-    (0, common_1.Get)(':id'),
-    __param(0, (0, common_1.Param)('id', common_1.ParseIntPipe)),
+    (0, common_1.Get)(":id"),
+    __param(0, (0, common_1.Param)("id", common_1.ParseIntPipe)),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Number]),
     __metadata("design:returntype", gym_entity_1.Gym)
@@ -66,22 +66,22 @@ __decorate([
     __metadata("design:returntype", gym_entity_1.Gym)
 ], GymController.prototype, "createGym", null);
 __decorate([
-    (0, common_1.Patch)(':id'),
-    __param(0, (0, common_1.Param)('id', common_1.ParseIntPipe)),
+    (0, common_1.Patch)(":id"),
+    __param(0, (0, common_1.Param)("id", common_1.ParseIntPipe)),
     __param(1, (0, common_1.Body)()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Number, update_gym_dto_1.UpdateGymDto]),
     __metadata("design:returntype", gym_entity_1.Gym)
 ], GymController.prototype, "updateGym", null);
 __decorate([
-    (0, common_1.Delete)(':id'),
-    __param(0, (0, common_1.Param)('id', common_1.ParseIntPipe)),
+    (0, common_1.Delete)(":id"),
+    __param(0, (0, common_1.Param)("id", common_1.ParseIntPipe)),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [Number]),
     __metadata("design:returntype", gym_entity_1.Gym)
 ], GymController.prototype, "deleteGym", null);
 exports.GymController = GymController = __decorate([
-    (0, common_1.Controller)('gyms'),
+    (0, common_1.Controller)("gyms"),
     __metadata("design:paramtypes", [gym_service_1.GymService])
 ], GymController);
 //# sourceMappingURL=gym.controller.js.map

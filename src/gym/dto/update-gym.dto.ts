@@ -1,26 +1,19 @@
-import {
-  IsBoolean,
-  IsNumber,
-  IsOptional,
-  IsString,
-  Min,
-} from 'class-validator';
+import { IsBoolean, IsNumber, IsOptional, IsString } from "class-validator";
 
 export class UpdateGymDto {
-  @IsOptional()
   @IsString()
+  @IsOptional()
   name?: string;
 
-  @IsOptional()
   @IsString()
+  @IsOptional()
   location?: string;
 
-  @IsOptional()
   @IsNumber()
-  @Min(1)
+  @IsOptional()
   monthlyFee?: number;
 
-  @IsOptional()
   @IsBoolean()
+  @IsOptional()
   isOpen?: boolean;
 }

@@ -1,26 +1,26 @@
-import { Injectable, NotFoundException } from '@nestjs/common';
-import { CreateGymDto } from './dto/create-gym.dto';
-import { UpdateGymDto } from './dto/update-gym.dto';
-import { Gym } from './entities/gym.entity';
+import { Injectable, NotFoundException } from "@nestjs/common";
+import { CreateGymDto } from "./dto/create-gym.dto";
+import { UpdateGymDto } from "./dto/update-gym.dto";
+import { Gym } from "./entities/gym.entity";
 
 @Injectable()
 export class GymService {
   private gyms: Gym[] = [
     {
       id: 1,
-      name: 'Iron Temple Fitness',
-      location: 'Hyderabad',
+      name: "Iron Temple Fitness",
+      location: "Hyderabad",
       monthlyFee: 1500,
       isOpen: true,
-      createdAt: new Date('2026-06-15T09:00:00.000Z'),
+      createdAt: new Date("2026-06-15T09:00:00.000Z"),
     },
     {
       id: 2,
-      name: 'Core Strength Gym',
-      location: 'Bengaluru',
+      name: "Core Strength Gym",
+      location: "Bengaluru",
       monthlyFee: 2000,
       isOpen: true,
-      createdAt: new Date('2026-06-15T09:30:00.000Z'),
+      createdAt: new Date("2026-06-15T09:30:00.000Z"),
     },
   ];
   private nextId = 3;
