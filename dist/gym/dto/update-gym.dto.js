@@ -19,23 +19,24 @@ class UpdateGymDto {
 }
 exports.UpdateGymDto = UpdateGymDto;
 __decorate([
-    (0, class_validator_1.IsString)(),
     (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.IsString)(),
     __metadata("design:type", String)
 ], UpdateGymDto.prototype, "name", void 0);
 __decorate([
-    (0, class_validator_1.IsString)(),
     (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.IsString)(),
     __metadata("design:type", String)
 ], UpdateGymDto.prototype, "location", void 0);
 __decorate([
-    (0, class_validator_1.IsNumber)(),
     (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.IsNumber)(),
+    (0, class_validator_1.Min)(1),
     __metadata("design:type", Number)
 ], UpdateGymDto.prototype, "monthlyFee", void 0);
 __decorate([
-    (0, class_validator_1.IsBoolean)(),
     (0, class_validator_1.IsOptional)(),
+    (0, class_validator_1.IsBoolean)(),
     __metadata("design:type", Boolean)
 ], UpdateGymDto.prototype, "isOpen", void 0);
 //# sourceMappingURL=update-gym.dto.js.map

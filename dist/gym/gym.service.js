@@ -12,19 +12,19 @@ let GymService = class GymService {
     gyms = [
         {
             id: 1,
-            name: "Iron Temple Fitness",
-            location: "Hyderabad",
+            name: 'Iron Temple Fitness',
+            location: 'Hyderabad',
             monthlyFee: 1500,
             isOpen: true,
-            createdAt: new Date("2026-06-15T09:00:00.000Z"),
+            createdAt: new Date('2026-06-15T09:00:00.000Z'),
         },
         {
             id: 2,
-            name: "Core Strength Gym",
-            location: "Bengaluru",
+            name: 'Core Strength Gym',
+            location: 'Bengaluru',
             monthlyFee: 2000,
             isOpen: true,
-            createdAt: new Date("2026-06-15T09:30:00.000Z"),
+            createdAt: new Date('2026-06-15T09:30:00.000Z'),
         },
     ];
     nextId = 3;
